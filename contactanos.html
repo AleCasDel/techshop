@@ -1,0 +1,243 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512
+/1839/1839325.png">
+<title> Contáctanos </title>
+<Script Language="JavaScript">
+
+
+	function DameLaFechaHora() {
+  	var hora = new Date()
+  	var hrs = hora.getHours();
+  	var min = hora.getMinutes();
+  	var hoy = new Date();
+  	var m = new Array();
+  	var d = new Array()
+  	var an= hoy.getYear();
+  	m[0]="Enero";  m[1]="Febrero";  m[2]="Marzo";
+  	m[3]="Abril";   m[4]="Mayo";  m[5]="Junio";
+  	m[6]="Julio";	m[7]="Agosto";   m[8]="Septiembre";
+  	m[9]="Octubre";   m[10]="Noviembre"; m[11]="Diciembre";
+	
+	if (min<10){
+  	document.write("Son las "+hrs+":0"+min+" (");
+  	document.write(hoy.getDate());
+  	document.write(" de ");
+  	document.write(m[hoy.getMonth()]);
+  	document.write(")");
+	}
+	
+	else{
+		document.write("Son las "+hrs+":"+min+" (");
+  	document.write(hoy.getDate());
+  	document.write(" de ");
+  	document.write(m[hoy.getMonth()]);
+  	document.write(")");
+	}
+	
+	}
+</Script>
+<style>
+div {height :50px; font-size :30px;}
+body{
+background-color:#E6F5F9
+}
+.hora{
+border: #59a5fc  5px outset;
+border-top-left-radius: 20px;
+border-bottom-right-radius: 20px;
+width: 400px;
+height: 50px;
+font-family: 'Nunito', sans-serif;
+font-size: 15pt;
+line-height: 50px;
+}
+form {
+text-align:center;
+}
+TD{
+text-align:center;
+}
+b{
+color:green;
+}
+a:hover {
+color:black;
+}
+.table{  posiiton:relative;
+text-align:center;
+}
+.inicio{
+position: absolute;
+left:0;
+width :375px;
+height :70px;
+left: 0;
+background :#00359f;
+color :white;
+font-size :30px;
+text-align: center;
+line-height: 60px;
+font-family: 'Lilita One', cursive;
+}
+.videos{
+position: absolute;
+left:375;
+width :375px;
+height :70px;
+background :#00359f;
+color :white;
+font-size :30px;
+text-align: center;
+line-height: 60px;
+font-family: 'Lilita One', cursive;
+}
+.contacto{
+position:absolute;
+left:750;
+width :375px;
+height :70px;
+background :#00359f;
+color :white;
+font-size :30px;
+text-align: center;
+line-height: 60px;
+font-family: 'Lilita One', cursive;
+}
+.productos{
+position: absolute;
+left:1125;
+width :375px;
+height :70px;
+background :#00359f;
+color :white;
+font-size :30px;
+text-align: center;
+line-height: 60px;
+font-family: 'Lilita One', cursive;
+}
+.texto1{
+font-size:70;
+text-decoration: solid;
+text-align:center;
+text-decoration:underline;
+}
+.texto2{ position:relative;
+font-size:30;
+text-align:center;
+}
+.texto{ position:relative;
+font-size: 30;
+text-align:center;
+}
+.texto4{ position:relative;
+font-size: 20;
+left:50;
+text-align:center;
+}
+.texto3{ 
+font-size:20;
+}
+.imagen1{ position:relative;
+left:50
+}
+hr{
+height: 5px;
+background-color: #00359f;
+width: 95%
+}
+a {
+text-decoration:white;
+color:white;
+}
+.titulo { position:relative;
+font-size:50;
+text-align:center;
+}
+p {
+font-weight:normal;
+}
+li{
+text-align:left;
+}
+.pequeño{
+text-align:right;
+font-size:8;
+}
+</style>
+</head>
+<body>
+<img src="banner.jpg" width="1500" height="300"> <br>	
+<br>
+<div class=contacto> <a href="premontados.html"> Premontados </a> </div>
+<div class=productos> <a href="contactanos.html"> Contáctanos </a> </div>
+<div class=videos> <a href="tarifas.html"> Tarifas </a> </div>
+<div class=inicio> <a href="inicio.html" > Inicio </a> </div>
+
+<br><br><br><br><br>
+
+<p class=texto1>  CONTÁCTANOS </p>
+<hr>
+<table cellpadding=30 width=1500>
+<tr>
+<td class=imagen1>
+<iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d3148.61790
+59177634!2d-4.7551981!3d37.8926175!3m2!1i1024!2i768!4f13.1!3m2!1m1!2sMICROSE
+R%20COMPUTERS%2C%20S.L!5e0!3m2!1ses!2ses!4v1669196858093!5m2!1ses!2ses" 
+width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+<td><p class=titulo> ¡Contáctanos! </p> <p class=texto2> Buscanos en la Avenida Libia junto
+al IES Fidiana y traenos tu pc para que nosotros solventemos tus problemas.
+<p class=pequeño> No nos hacemos cargo de la pérdida de componentes, su mal
+uso o su rotura. </p> </p></td>
+</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+<center>
+<h2 class="hora">
+<script>
+DameLaFechaHora();
+</script>
+</h2>
+</center>
+</body>
+</html>

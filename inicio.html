@@ -1,0 +1,228 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512
+/1839/1839325.png">
+<title> Inicio </title>
+<Script Language="JavaScript">
+	function DameLaFechaHora() {
+  	var hora = new Date()
+  	var hrs = hora.getHours();
+  	var min = hora.getMinutes();
+  	var hoy = new Date();
+  	var m = new Array();
+  	var d = new Array()
+  	var an= hoy.getYear();
+  	m[0]="Enero";  m[1]="Febrero";  m[2]="Marzo";
+  	m[3]="Abril";   m[4]="Mayo";  m[5]="Junio";
+  	m[6]="Julio";	m[7]="Agosto";   m[8]="Septiembre";
+  	m[9]="Octubre";   m[10]="Noviembre"; m[11]="Diciembre";
+	
+	if (min<10){
+  	document.write("Son las "+hrs+":0"+min+" (");
+  	document.write(hoy.getDate());
+  	document.write(" de ");
+  	document.write(m[hoy.getMonth()]);
+  	document.write(")");
+	}
+	
+	else{
+		document.write("Son las "+hrs+":"+min+" (");
+  	document.write(hoy.getDate());
+  	document.write(" de ");
+  	document.write(m[hoy.getMonth()]);
+  	document.write(")");
+	}
+	
+	}
+</Script>
+<style>
+div {height :50px; font-size :30px;}
+body{
+background-color:#E6F5F9
+}
+.hora{
+border: #59a5fc  5px outset;
+border-top-left-radius: 20px;
+border-bottom-right-radius: 20px;
+width: 400px;
+height: 50px;
+font-family: 'Nunito', sans-serif;
+font-size: 15pt;
+line-height: 50px;
+}
+a:hover {
+color:black;
+}
+.inicio{
+position: absolute;
+left:0;
+width :375px;
+height :70px;
+left: 0;
+background :#00359f;
+color :white;
+font-size :30px;
+text-align: center;
+line-height: 60px;
+font-family: 'Lilita One', cursive;
+}
+.videos{
+position: absolute;
+left:375;
+width :375px;
+height :70px;
+background :#00359f;
+color :white;
+font-size :30px;
+text-align: center;
+line-height: 60px;
+font-family: 'Lilita One', cursive;
+}
+.contacto{
+position:absolute;
+left:750;
+width :375px;
+height :70px;
+background :#00359f;
+color :white;
+font-size :30px;
+text-align: center;
+line-height: 60px;
+font-family: 'Lilita One', cursive;
+}
+.productos{
+position: absolute;
+left:1125;
+width :375px;
+height :70px;
+background :#00359f;
+color :white;
+font-size :30px;
+text-align: center;
+line-height: 60px;
+font-family: 'Lilita One', cursive;
+}
+.texto1{
+font-size:70;
+text-decoration: solid;
+text-align:center;
+text-decoration:underline;
+}
+.texto2{ position:relative;
+font-size:30;
+text-align:center;
+}
+.texto{ position:relative;
+font-size: 20;
+left:150;
+}
+.texto4{ position:relative;
+font-size: 20;
+text-align:center;
+}
+.texto3{ position:relative;
+font-size:30;
+left:250;
+}
+.imagen1{ position:relative;
+left:50
+}
+hr{
+height: 5px;
+background-color: #00359f;
+width: 95%
+}
+a {
+text-decoration:white;
+color:white;
+}
+form { 
+width :1400;
+height :197;
+background :white;
+}
+.hora{
+border: #59a5fc  5px outset;
+border-top-left-radius: 20px;
+border-bottom-right-radius: 20px;
+width: 400px;
+height: 50px;
+font-family: 'Nunito', sans-serif;
+font-size: 15pt;
+line-height: 50px;
+}
+</style>
+</head>
+<body>
+<img src="banner.jpg" width="1500" height="300"> <br>	
+<br>
+<div class=contacto> <a href="premontados.html"> Premontados </a> </div>
+<div class=productos> <a href="contactanos.html"> Contáctanos </a> </div>
+<div class=videos> <a href="tarifas.html"> Tarifas </a> </div>
+<div class=inicio> <a href="inicio.html" > Inicio </a> </div>
+
+<br><br><br><br><br>
+
+<p class=texto1>  INICIO </p>
+<hr>
+<table cellpadding=50 width=1500>
+<TR>
+<TD><p class=texto2> ¿Cansado de un mal rendimiento de tu ordenador/portatil? </p>
+<p class=texto4> ¡El problema se ha acabado! En nuestra tienda enfocada al 
+mantenimiento y mejora de ordenadores haremos un análisis avanzado tanto de 
+Hardware como de Software y optimizaremos tu ordenador para que sea mejor 
+incluso que cuando lo comprastes.</p></TD>
+<TD><img src="https://www.timbrit.com.ar/blog/wp-content/uploads/2020/02/error-windows-pantalla-azul.jpg" width="512" height="342"></TD>
+</TR>
+</table>
+
+<hr>
+
+<table cellpadding=50 width=1500>
+<TR>
+<TD><img class=imagen1 src="https://tutorialesenlinea.es/uploads/posts/2020-02/1580927998_co
+mo-conseguir-el-maximo-rendimiento-del-pc-con-un-buen-mantenimiento-informatic
+o_tutoriales_en_linea.webp" width="402" height="266"></TD>
+<TD><p class=texto2> ¡Comprueba nuestros bajos precios! </p>
+<p class=texto4> Visita las pestaña de <u>Tarifas</u> para ver nuestros
+asequibles precios y escoge el que más se ajuste a tí para conseguir sacarle
+el máximo provecho a tu ordenador. 
+</TR>
+</table>
+<hr>
+
+<table cellpadding=50 width=1500>
+<TR>
+<TD><p class=texto2> También puedes Comprar uno de nuestros Premontados </p>
+<p class=texto4> Si no tienes ordenador o quieres uno de la más alta gama a 
+un buen precio visita nuestro apartado de <u>Premontados</u> para ver las 
+especificaciones y ¡Hazte con uno YA!</p></TD>
+<TD><img src="https://www.noticias3d.com/imagenes/noticias/202007/manticore01.png" width="525" height="296"></TD>
+</TR>
+</table>
+<hr>
+
+<table cellpadding=50 width=1500>
+<TR>
+<TD><img class=imagen1 src="https://www.informatica-hoy.com.ar/imagenes11/resolver.jpg" width="500" height="309"></TD>
+<TD><p class=texto2>¡Ven a vernos y preguntanos tus dudas! </p>
+<p class=texto4> Visita nuestra pestaña <u>Contáctanos</u> e informate de la
+ubicaión de nuestra tienda.</p></td>
+</TR>
+</table>
+<hr>
+
+
+<center>
+<h2 class="hora">
+<script>
+DameLaFechaHora();
+</script>
+</h2>
+</center>
+
+
+
+</body>
+</html>

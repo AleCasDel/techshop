@@ -1,0 +1,261 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512
+/1839/1839325.png">
+<title> Tarifas </title>
+<Script Language="JavaScript">
+
+
+	function DameLaFechaHora() {
+  	var hora = new Date()
+  	var hrs = hora.getHours();
+  	var min = hora.getMinutes();
+  	var hoy = new Date();
+  	var m = new Array();
+  	var d = new Array()
+  	var an= hoy.getYear();
+  	m[0]="Enero";  m[1]="Febrero";  m[2]="Marzo";
+  	m[3]="Abril";   m[4]="Mayo";  m[5]="Junio";
+  	m[6]="Julio";	m[7]="Agosto";   m[8]="Septiembre";
+  	m[9]="Octubre";   m[10]="Noviembre"; m[11]="Diciembre";
+	
+	if (min<10){
+  	document.write("Son las "+hrs+":0"+min+" (");
+  	document.write(hoy.getDate());
+  	document.write(" de ");
+  	document.write(m[hoy.getMonth()]);
+  	document.write(")");
+	}
+	
+	else{
+		document.write("Son las "+hrs+":"+min+" (");
+  	document.write(hoy.getDate());
+  	document.write(" de ");
+  	document.write(m[hoy.getMonth()]);
+  	document.write(")");
+	}
+	
+	}
+</Script>
+<style>
+div {height :50px; font-size :30px;}
+body{
+background-color:#E6F5F9
+}
+form { position:relative;
+text-align:center;
+width: 800px;
+left:350;
+}
+TD{
+text-align:center;
+}
+b{
+color:green;
+}
+a:hover {
+color:black;
+}
+.table{  position:relative;
+text-align:center;
+}
+.inicio{
+position: absolute;
+left:0;
+width :375px;
+height :70px;
+left: 0;
+background :#00359f;
+color :white;
+font-size :30px;
+text-align: center;
+line-height: 60px;
+font-family: 'Lilita One', cursive;
+}
+.videos{
+position: absolute;
+left:375;
+width :375px;
+height :70px;
+background :#00359f;
+color :white;
+font-size :30px;
+text-align: center;
+line-height: 60px;
+font-family: 'Lilita One', cursive;
+}
+.contacto{
+position:absolute;
+left:750;
+width :375px;
+height :70px;
+background :#00359f;
+color :white;
+font-size :30px;
+text-align: center;
+line-height: 60px;
+font-family: 'Lilita One', cursive;
+}
+.productos{
+position: absolute;
+left:1125;
+width :375px;
+height :70px;
+background :#00359f;
+color :white;
+font-size :30px;
+text-align: center;
+line-height: 60px;
+font-family: 'Lilita One', cursive;
+}
+.texto1{
+font-size:70;
+text-decoration: solid;
+text-align:center;
+text-decoration:underline;
+}
+.texto2{ position:relative;
+font-size:30;
+text-align:left;
+left:100;
+}
+.texto{ position:relative;
+font-size: 30;
+text-align:center;
+}
+.texto4{ position:relative;
+font-size: 20;
+left:50;
+text-align:center;
+}
+.texto3{ 
+font-size:20;
+}
+.imagen1{ position:relative;
+left:50
+}
+hr{
+height: 5px;
+background-color: #00359f;
+width: 95%
+}
+a {
+text-decoration:white;
+color:white;
+}
+.titulo { position:relative;
+font-size:40;
+text-align:center;
+}
+p {
+font-weight:normal;
+}
+.hora{
+border: #59a5fc  5px outset;
+border-top-left-radius: 20px;
+border-bottom-right-radius: 20px;
+width: 400px;
+height: 50px;
+font-family: 'Nunito', sans-serif;
+font-size: 15pt;
+line-height: 50px;
+}
+</style>
+</head>
+<body>
+<img src="banner.jpg" width="1500" height="300"> <br>	
+<br>
+<div class=contacto> <a href="premontados.html"> Premontados </a> </div>
+<div class=productos> <a href="contactanos.html"> Contáctanos </a> </div>
+<div class=videos> <a href="tarifas.html"> Tarifas </a> </div>
+<div class=inicio> <a href="inicio.html" > Inicio </a> </div>
+
+<br><br><br><br><br>
+
+<p class=texto1>  TARIFAS </p>
+<hr>
+<p class=titulo> Tarifas Dedicadas: </p>
+<p class=texto> Haz este formulario y te reenviaremos una tarifa a tu medida.</p>
+<br>
+<br>
+<br>
+<form>
+<fieldset>
+<legend>Parámetros Generales</legend>
+<p> Tipo de Ordenador y Uso </p>
+<select name="menu">
+<option>Sobremesa</option>
+<option>Portatil</option>
+</select> <br>
+<select name="menu">
+<option>Trabajo</option>
+<option>Gaming/Streaming</option>
+<option>Otro (especificar al final)</option>
+</select><br>
+<p> Problemas </p>
+<input type="checkbox" name="casilla"> Rendimiento <br>
+<input type="checkbox" name="casilla"> Temperaturas <br>
+<input type="checkbox" name="casilla"> SoftWare malintencionado <br>
+<input type="checkbox" name="casilla"> No enciende / Problemas para encender <br>
+</fieldset> <br>
+<fieldset>
+<legend>Parámetros Generales</legend>
+<p> Descripción Del Problema Observado </p>
+<textarea name="texto" rows="14" cols="40"></textarea>
+<p> Correo de Contacto</p>
+<input type="text" name="texto">
+</fieldset>
+<br>
+<fieldset>
+<legend> ¿Qué se Requiere? </legend>
+<input type="radio" name="tamaño" value="1"> Encontrar, Notificar y Solucionar el Problema <br>
+<input type="radio" name="tamaño" value="2"> Encontrar y Notificar el Problema <br>
+</fieldset>
+<br><br>
+
+<input type="checkbox" name="casilla"> Acepto los <u><a href="terminos.html"> Términos Y Condiciones </a> </u><br>
+<input type="submit" value="Enviar Formulario">
+</form>
+<br>
+<br>
+<br>
+<hr>
+<p class=titulo> Tarifas Generales: </p>
+<p class=texto> Elija el plan que más se adapte a sus necesidades.</p>
+<br>
+<table cellpadding=10 width=1500 border=3>
+<TR>
+<TD width="33%" bgcolor="#0798CA" class=texto3><FONT COLOR="white">Limpieza General</FONT></TD>
+<TD width="33%" bgcolor="#0798CA" class=texto3><FONT COLOR="white">Mantenimiento / Upgrade de Hardware</FONT></TD>
+<TD width="33%" bgcolor="#0798CA" class=texto3><FONT COLOR="white">Revisión de Software y Actualización del Sistema</FONT></TD>
+</TR>
+<TR>
+<TD>Traenos tu Pc y le haremos una limpieza general el la que solventaremos cualquier problema de rendimiento debido
+a altas temperaturas y en el que nos aseguraremos de cambiar las pastas térmicas.</TD>
+<TD>Traenos tu Pc para revisar el estado del hardware y solventar a través de la instalación pertinente cualquier 
+problema de rendimiento causado por el hardware.</TD>
+<TD>Traenos tu Pc para que le hagamos una revisión de estado completa para encontrar cualquier virus o software 
+malintencionado que este ralentizando su pc o pnga en peligro sus documentos privados.</TD>
+</TR>
+<TR>
+<TD>Precio: <b>25€</b> <button onclick="alert('1000$ han sido retirados de su cuenta bancaria')">Reserva ahora</button></TD>
+<TD>Precio: <b>30€</b> <button onclick="alert('1000$ han sido retirados de su cuenta bancaria')">Reserva ahora</button></TD>
+<TD>Precio: <b>40€</b> <button onclick="alert('1000$ han sido retirados de su cuenta bancaria')">Reserva ahora</button></TD>
+</TR>
+</table>
+<br>
+<br>
+
+
+<hr>
+<center>
+<h2 class="hora">
+<script>
+DameLaFechaHora();
+</script>
+</h2>
+</center>
+</body>
+</html>
+
